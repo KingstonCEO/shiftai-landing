@@ -13,7 +13,7 @@
  font-family: 'Orbitron', -apple-system, BlinkMacSystemFont, sans-serif;
  color: #fff;
  overflow-x: hidden;
- background: #000;
+ background: linear-gradient(135deg, #0a0a1a 0%, #000428 50%, #000000 100%);
  }
 
  #matrix-bg {
@@ -23,7 +23,7 @@
  width: 100%;
  height: 100%;
  z-index: 0;
- background: #000;
+ background: linear-gradient(135deg, #0a0a1a 0%, #000428 50%, #000000 100%);
  }
 
  .content {
@@ -48,20 +48,22 @@
  line-height: 1;
  letter-spacing: -0.02em;
  margin-bottom: 10px;
- background: linear-gradient(135deg, #00BFFF, #9370DB, #FF1493);
+ background: linear-gradient(90deg, #FF1493, #00BFFF);
  -webkit-background-clip: text;
  -webkit-text-fill-color: transparent;
  background-clip: text;
  text-transform: uppercase;
+ text-shadow: 0 0 20px rgba(255, 20, 147, 0.5);
  }
 
  .tagline {
  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
- color: #00BFFF;
+ color: #00D9FF;
  margin-bottom: 8px;
  font-weight: 700;
  line-height: 1.2;
  text-transform: uppercase;
+ text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
  }
 
  .subtagline {
@@ -73,12 +75,12 @@
  }
 
  .card {
- background: rgba(0, 0, 0, 0.95);
+ background: rgba(10, 10, 26, 0.8);
  backdrop-filter: blur(10px);
  border-radius: 20px;
  padding: 30px;
- box-shadow: 0 20px 60px rgba(0, 191, 255, 0.2);
- border: 1px solid #00BFFF;
+ box-shadow: 0 0 40px rgba(255, 20, 147, 0.3), 0 0 60px rgba(0, 191, 255, 0.2);
+ border: 1px solid rgba(255, 20, 147, 0.5);
  margin-bottom: 20px;
  }
 
@@ -86,8 +88,8 @@
  width: 100%;
  border-radius: 12px;
  margin-bottom: 25px;
- border: 1px solid #00BFFF;
- box-shadow: 0 10px 40px rgba(0, 191, 255, 0.2);
+ border: 2px solid rgba(255, 20, 147, 0.6);
+ box-shadow: 0 0 30px rgba(255, 20, 147, 0.4), 0 0 50px rgba(0, 191, 255, 0.3);
  }
 
  .video-container {
@@ -124,9 +126,17 @@
  .feature {
  text-align: center;
  padding: 15px;
- background: rgba(0, 0, 0, 0.6);
+ background: rgba(10, 10, 40, 0.5);
  border-radius: 10px;
- border: 1px solid #00BFFF;
+ border: 1px solid rgba(0, 191, 255, 0.4);
+ box-shadow: 0 0 15px rgba(0, 191, 255, 0.2);
+ transition: all 0.3s ease;
+ }
+
+ .feature:hover {
+ border-color: rgba(255, 20, 147, 0.6);
+ box-shadow: 0 0 20px rgba(255, 20, 147, 0.4);
+ transform: translateY(-2px);
  }
 
  .feature-icon {
@@ -136,10 +146,11 @@
 
  .feature-text {
  font-size: 0.75rem;
- color: #00BFFF;
+ color: #00D9FF;
  font-weight: 600;
  text-transform: uppercase;
  line-height: 1.2;
+ text-shadow: 0 0 5px rgba(0, 217, 255, 0.3);
  }
 
  .cta-section {
@@ -149,11 +160,12 @@
 
  .cta-headline {
  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
- color: #00BFFF;
+ color: #00D9FF;
  font-weight: 900;
  margin-bottom: 15px;
  line-height: 1.2;
  text-transform: uppercase;
+ text-shadow: 0 0 15px rgba(0, 217, 255, 0.5);
  }
 
  .form-group {
@@ -164,9 +176,9 @@
  width: 100%;
  padding: 15px 20px;
  font-size: 1rem;
- border: 2px solid #9370DB;
+ border: 1px solid rgba(0, 191, 255, 0.3);
  border-radius: 10px;
- background: rgba(0, 0, 0, 0.7);
+ background: rgba(10, 10, 40, 0.6);
  color: #fff;
  font-family: 'Orbitron', sans-serif;
  transition: all 0.3s ease;
@@ -174,8 +186,8 @@
 
  .form-group input:focus {
  outline: none;
- border-color: #00BFFF;
- box-shadow: 0 0 20px rgba(0, 191, 255, 0.5);
+ border-color: #FF1493;
+ box-shadow: 0 0 20px rgba(255, 20, 147, 0.6);
  }
 
  .form-group input::placeholder {
@@ -188,7 +200,7 @@
  font-size: 1.2rem;
  font-weight: 900;
  color: #fff;
- background: linear-gradient(135deg, #00BFFF, #9370DB);
+ background: linear-gradient(90deg, #FF1493, #00BFFF);
  border: none;
  border-radius: 10px;
  cursor: pointer;
@@ -196,12 +208,12 @@
  text-transform: uppercase;
  letter-spacing: 0.05em;
  transition: all 0.3s ease;
- box-shadow: 0 5px 20px rgba(0, 191, 255, 0.4);
+ box-shadow: 0 0 25px rgba(255, 20, 147, 0.5), 0 0 40px rgba(0, 191, 255, 0.3);
  }
 
  .submit-btn:hover {
  transform: translateY(-2px);
- box-shadow: 0 8px 30px rgba(0, 191, 255, 0.6);
+ box-shadow: 0 0 35px rgba(255, 20, 147, 0.7), 0 0 50px rgba(0, 191, 255, 0.5);
  }
 
  .submit-btn:active {
@@ -212,33 +224,37 @@
  text-align: center;
  margin: 25px 0;
  padding: 20px;
- background: rgba(0, 0, 0, 0.7);
+ background: rgba(10, 10, 40, 0.5);
  border-radius: 10px;
- border: 1px solid #00BFFF;
+ border: 1px solid rgba(0, 191, 255, 0.4);
+ box-shadow: 0 0 20px rgba(0, 191, 255, 0.2);
  }
 
  .launch-date {
  font-size: clamp(1.5rem, 3vw, 2rem);
- color: #00BFFF;
+ color: #FF1493;
  font-weight: 900;
  margin-bottom: 5px;
  text-transform: uppercase;
+ text-shadow: 0 0 15px rgba(255, 20, 147, 0.6);
  }
 
  .launch-location {
  font-size: clamp(1rem, 2vw, 1.3rem);
- color: #9370DB;
+ color: #00D9FF;
  font-weight: 700;
+ text-shadow: 0 0 10px rgba(0, 217, 255, 0.4);
  }
 
  .success-message {
  display: none;
- background: rgba(0, 0, 0, 0.8);
- border: 1px solid #00BFFF;
+ background: rgba(10, 10, 40, 0.7);
+ border: 1px solid rgba(0, 191, 255, 0.5);
  border-radius: 10px;
  padding: 20px;
  text-align: center;
  margin-top: 20px;
+ box-shadow: 0 0 25px rgba(0, 191, 255, 0.3);
  }
 
  .success-message.show {
@@ -247,9 +263,10 @@
 
  .success-title {
  font-size: 1.5rem;
- color: #00BFFF;
+ color: #FF1493;
  font-weight: 900;
  margin-bottom: 10px;
+ text-shadow: 0 0 15px rgba(255, 20, 147, 0.5);
  }
 
  .success-text {
@@ -262,17 +279,19 @@
  text-align: center;
  margin: 30px 0;
  padding: 25px;
- background: rgba(0, 0, 0, 0.7);
+ background: rgba(10, 10, 40, 0.5);
  border-radius: 15px;
- border: 1px solid #9370DB;
+ border: 1px solid rgba(147, 112, 219, 0.5);
+ box-shadow: 0 0 20px rgba(147, 112, 219, 0.2);
  }
 
  .qr-title {
  font-size: 1.3rem;
- color: #00BFFF;
+ color: #FF1493;
  font-weight: 900;
  margin-bottom: 15px;
  text-transform: uppercase;
+ text-shadow: 0 0 15px rgba(255, 20, 147, 0.5);
  }
 
  .qr-code {
@@ -281,8 +300,8 @@
  height: auto;
  margin: 0 auto;
  border-radius: 10px;
- border: 1px solid #FF1493;
- box-shadow: 0 10px 30px rgba(255, 20, 147, 0.2);
+ border: 2px solid rgba(255, 20, 147, 0.6);
+ box-shadow: 0 0 30px rgba(255, 20, 147, 0.4);
  }
 
  .qr-text {
@@ -313,7 +332,7 @@
 
  <div class="card">
  <!-- Hero Image -->
- <img src="shiftai-vegas.jpg" alt="ShiftAI - Las Vegas Launch" class="hero-image" />
+ <img src="shift-studio-hero.jpg" alt="SHIFT - Creative Toolbox" class="hero-image" />
  
  <!-- VIDEO EMBED SPOT - Replace hero image above with video embed when ready -->
  <!-- <div class="video-container">
@@ -403,7 +422,8 @@
  ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
  ctx.fillRect(0, 0, canvas.width, canvas.height);
 
- ctx.fillStyle = '#00BFFF';
+ const colors = ['#FF1493', '#00BFFF', '#9370DB'];
+ ctx.fillStyle = colors[Math.floor(Math.random() * colors.length)];
  ctx.font = fontSize + 'px monospace';
 
  for (let i = 0; i < drops.length; i++) {
