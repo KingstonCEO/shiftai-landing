@@ -1,0 +1,13 @@
+{
+  "name": "shiftai-landing",
+  "version": "1.0.0",
+  "description": "ShiftAI - The Founders Club Landing Page",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "keywords": ["shiftai", "founders", "ai"],
+  "author": "Greg Sain",
+  "license": "MIT"
+}
