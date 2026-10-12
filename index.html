@@ -82,6 +82,14 @@
  margin-bottom: 20px;
  }
 
+ .hero-image {
+ width: 100%;
+ border-radius: 12px;
+ margin-bottom: 25px;
+ border: 3px solid #9370DB;
+ box-shadow: 0 10px 40px rgba(147, 112, 219, 0.4);
+ }
+
  .video-container {
  position: relative;
  width: 100%;
@@ -104,17 +112,6 @@
  left: 0;
  width: 100%;
  height: 100%;
- }
-
- .video-placeholder {
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- text-align: center;
- color: #9370DB;
- font-size: 1.2rem;
- font-weight: 700;
  }
 
  .features {
@@ -281,11 +278,13 @@
  </div>
 
  <div class="card">
- <!-- VIDEO EMBED SPOT - Replace src with your YouTube/Vimeo embed URL -->
- <div class="video-container">
- <div class="video-placeholder">📹 Video Coming Soon</div>
- <!-- <iframe src="YOUR_VIDEO_EMBED_URL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
- </div>
+ <!-- Hero Image -->
+ <img src="shiftai-vegas.jpg" alt="ShiftAI - Las Vegas Launch" class="hero-image" />
+ 
+ <!-- VIDEO EMBED SPOT - Replace hero image above with video embed when ready -->
+ <!-- <div class="video-container">
+ <iframe src="YOUR_VIDEO_EMBED_URL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ </div> -->
  
  <div class="features">
  <div class="feature">
